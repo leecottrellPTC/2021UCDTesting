@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.leecottrell.selenium1.AppTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.298 s <<< FAILURE! - in com.leecottrell.selenium1.AppTest
-com.leecottrell.selenium1.AppTest.testBMIColor  Time elapsed: 1.766 s  <<< FAILURE!
-org.junit.ComparisonFailure: Background color wrong - overweight: expected:<rgba([197, 190, 225, 1])> but was:<rgba([0, 0, 0, 0])>
-	at com.leecottrell.selenium1.AppTest.testBMIColor(AppTest.java:69)
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.167 s <<< FAILURE! - in com.leecottrell.selenium1.AppTest
+com.leecottrell.selenium1.AppTest.testPause  Time elapsed: 6.756 s  <<< FAILURE!
+org.junit.ComparisonFailure: Title is bad expected:<Lee Cot[]rell> but was:<Lee Cot[t]rell>
+	at com.leecottrell.selenium1.AppTest.testPause(AppTest.java:61)
 

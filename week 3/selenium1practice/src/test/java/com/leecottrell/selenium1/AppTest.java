@@ -14,6 +14,13 @@ import org.openqa.selenium.chrome.ChromeDriver;    //whichever driver you have
 import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.*;
 
+import javax.imageio.IIOException;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.*;
+
 /**
  * Unit test for simple App.
  */
@@ -27,24 +34,65 @@ public class AppTest
     @BeforeClass
     public static void setupTest(){
         //System.setProperty("webdriver.gecko.driver", "c:\\selenium\\geckodriver.exe");
-        System.setProperty("webdriver.chrome.driver", "c:\\selenium\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "c:\\!selenium\\chromedriver\\chromedriver.exe");
         //driver = new FirefoxDriver();
         
         //for headless
-        ChromeOptions options = new ChromeOptions();
+        //ChromeOptions options = new ChromeOptions();
         //https://www.guru99.com/chrome-options-desiredcapabilities.html
-        options.addArguments("--headless");
-        driver = new ChromeDriver(options);
+       // options.addArguments("--headless");
+        //driver = new ChromeDriver(options);
         
         //driver = new ChromeDriver();
-        
+        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\geckodriver\\chromedriver.exe");
+        driver = new ChromeDriver();
+    }
+    @Test
+    public void testPause(){
+        driver.get("http://www.leecottrell.com");
+
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        assertEquals("Title is bad", "Lee Cotrell", driver.getTitle());
+    }
+    @Ignore
+    public void testScreenshot(){
+        driver.get("http://www.leecottrell.com");
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try{
+            FileUtils.copyFile(scrFile, new File("c:\\data\\screenshots\\home.png"));
+        }catch(IOException ie){
+            assertTrue("home.png is not created", false);
+        }
+    }
+    @Ignore
+    public void testIt(){
+        driver.get("http://www.leecottrell.com");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        //fullscreen
+      //  driver.manage().window().maximize();
+        //driver.navigate().
+        //String results = (String) js.executeAsyncScript("alert('wow!')");
+        //hold onto the return
+        //js.executeAsyncScript("window.scrollBy(0, 500)");
+                                    //0 is x, 500 is Y
+        //scroll until something is visible
+        WebElement footer = driver.findElement(By.xpath("/html/body/footer"));
+
+        js.executeScript("arguments[0].scrollIntoView()", footer);
     }
 
     @AfterClass
     public static void closeTest(){
-        driver.quit();
+        //driver.quit();
     }
-    @Test
+    @Ignore
     public void testBMIColor(){
         driver.get("https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/english_bmi_calculator/bmi_calculator.html");
         WebElement feet = driver.findElement(By.id("feet"));
