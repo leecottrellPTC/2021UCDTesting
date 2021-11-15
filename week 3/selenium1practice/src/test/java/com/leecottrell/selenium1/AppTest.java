@@ -12,12 +12,17 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;    //whichever driver you have
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 import javax.imageio.IIOException;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.commons.io.*;
 
@@ -51,12 +56,30 @@ public class AppTest
     public void testPause(){
         driver.get("http://www.leecottrell.com");
 
-        try {
+       /* try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        */
+
+        //implicit test
+      /*  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                                //implicitlyWait(10, TimeUnit.SECONDS)
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        try{
+            WebElement footer = driver.findElement(By.xpath("/html/body/footer"));
+        }finally{
+            assertTrue("Timeout failed", false);
+        }
+        */
+
+        //explicit wait
+        Boolean div = new WebDriverWait(driver, 
+            Duration.ofSeconds(15)).until(ExpectedConditions.titleContains("Lee"));
+
 
         assertEquals("Title is bad", "Lee Cotrell", driver.getTitle());
     }
