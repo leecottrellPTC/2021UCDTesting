@@ -49,8 +49,13 @@ public class AppTest
         //driver = new ChromeDriver(options);
         
         //driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\geckodriver\\chromedriver.exe");
-        driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver\\chromedriver.exe");
+        //driver = new ChromeDriver();
+
+        ChromeOptions options = new ChromeOptions();
+        //https://www.guru99.com/chrome-options-desiredcapabilities.html
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
     }
     @Test
     public void testPause(){
@@ -81,7 +86,7 @@ public class AppTest
             Duration.ofSeconds(15)).until(ExpectedConditions.titleContains("Lee"));
 
 
-        assertEquals("Title is bad", "Lee Cotrell", driver.getTitle());
+        assertEquals("Title is bad", "Lee Cottrell", driver.getTitle());
     }
     @Ignore
     public void testScreenshot(){
@@ -113,7 +118,7 @@ public class AppTest
 
     @AfterClass
     public static void closeTest(){
-        //driver.quit();
+        driver.quit();
     }
     @Ignore
     public void testBMIColor(){
