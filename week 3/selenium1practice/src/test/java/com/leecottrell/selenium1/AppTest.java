@@ -36,6 +36,7 @@ public class AppTest
      */
 
     public static WebDriver driver;
+    public static String movieURL = "https://www.rottentomatoes.com/m/eternals/reviews";
     @BeforeClass
     public static void setupTest(){
         //System.setProperty("webdriver.gecko.driver", "c:\\selenium\\geckodriver.exe");
@@ -56,8 +57,31 @@ public class AppTest
         //https://www.guru99.com/chrome-options-desiredcapabilities.html
         options.addArguments("--headless");
         driver = new ChromeDriver(options);
+       // driver = new ChromeDriver();
     }
+    
     @Test
+    public void testMovieSite(){
+        //count the number of times Marvel appears in a review
+        driver.get(movieURL);
+        List<WebElement> allReviews = driver.findElements(By.className("the_review"));
+        List<String> reviewsText = new ArrayList<String>();
+
+        for (WebElement aReview : allReviews) {
+            reviewsText.add(aReview.getText());            
+        }
+        int marvelCount = 0;
+        //inefficient on purpose to drive lecture
+        for (String reviewTxt : reviewsText) {
+            if(reviewTxt.contains("Marvel")){
+                marvelCount ++;
+            }
+        }
+        System.out.println("Reviews scraped " + reviewsText.size());
+        System.out.println("Marvel mentioned " + marvelCount + " times");
+
+    }
+    @Ignore
     public void testPause(){
         driver.get("http://www.leecottrell.com");
 
