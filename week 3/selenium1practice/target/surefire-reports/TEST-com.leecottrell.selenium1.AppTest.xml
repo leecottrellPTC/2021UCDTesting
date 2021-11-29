@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.leecottrell.selenium1.AppTest" time="25.916" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.leecottrell.selenium1.AppTest" time="25.961" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.12\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire15856244193193992360\surefirebooter14812041969224821517.jar C:\Users\User\AppData\Local\Temp\surefire15856244193193992360 2021-11-22T16-29-51_370-jvmRun1 surefire5020667420173820659tmp surefire_012863142665131285833tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire11735944513624994060\surefirebooter15224200196153965288.jar C:\Users\User\AppData\Local\Temp\surefire11735944513624994060 2021-11-23T10-45-43_305-jvmRun1 surefire17842506042842432827tmp surefire_09942850165177193540tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\source\2021UCDTesting\week 3\selenium1practice\target\test-classes;D:\source\2021UCDTesting\week 3\selenium1practice\target\classes;C:\Users\User\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0\selenium-java-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0\selenium-api-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0\selenium-chrome-driver-4.0.0.jar;C:\Users\User\.m2\repository\com\google\auto\service\auto-service-annotations\1.0\auto-service-annotations-1.0.jar;C:\Users\User\.m2\repository\com\google\auto\service\auto-service\1.0\auto-service-1.0.jar;C:\Users\User\.m2\repository\com\google\auto\auto-common\1.0\auto-common-1.0.jar;C:\Users\User\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\User\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\User\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0\selenium-chromium-driver-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0\selenium-json-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.0.0\selenium-devtools-v85-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v93\4.0.0\selenium-devtools-v93-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.0.0\selenium-devtools-v94-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.0.0\selenium-devtools-v95-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0\selenium-edge-driver-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0\selenium-firefox-driver-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0\selenium-firefox-xpi-driver-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0\selenium-ie-driver-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0\selenium-opera-driver-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0\selenium-remote-driver-4.0.0.jar;C:\Users\User\.m2\repository\com\beust\jcommander\1.81\jcommander-1.81.jar;C:\Users\User\.m2\repository\io\netty\netty-buffer\4.1.68.Final\netty-buffer-4.1.68.Final.jar;C:\Users\User\.m2\repository\io\netty\netty-codec-http\4.1.67.Final\netty-codec-http-4.1.67.Final.jar;C:\Users\User\.m2\repository\io\netty\netty-codec\4.1.67.Final\netty-codec-4.1.67.Final.jar;C:\Users\User\.m2\repository\io\netty\netty-handler\4.1.67.Final\netty-handler-4.1.67.Final.jar;C:\Users\User\.m2\repository\io\netty\netty-common\4.1.68.Final\netty-common-4.1.68.Final.jar;C:\Users\User\.m2\repository\io\netty\netty-transport-native-epoll\4.1.67.Final\netty-transport-native-epoll-4.1.67.Final.jar;C:\Users\User\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.67.Final\netty-transport-native-kqueue-4.1.67.Final.jar;C:\Users\User\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.67.Final\netty-transport-native-unix-common-4.1.67.Final.jar;C:\Users\User\.m2\repository\io\netty\netty-transport\4.1.68.Final\netty-transport-4.1.68.Final.jar;C:\Users\User\.m2\repository\io\netty\netty-resolver\4.1.68.Final\netty-resolver-4.1.68.Final.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api\1.6.0\opentelemetry-api-1.6.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-context\1.6.0\opentelemetry-context-1.6.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.6.0\opentelemetry-exporter-logging-1.6.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.6.0-alpha\opentelemetry-sdk-metrics-1.6.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.6.0\opentelemetry-sdk-common-1.6.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.6.0\opentelemetry-sdk-extension-autoconfigure-spi-1.6.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.6.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.6.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.6.0\opentelemetry-sdk-trace-1.6.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.6.0-alpha\opentelemetry-api-metrics-1.6.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.6.0\opentelemetry-sdk-1.6.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.6.0-alpha\opentelemetry-semconv-1.6.0-alpha.jar;C:\Users\User\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\User\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\User\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\User\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\User\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\User\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\User\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\User\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\User\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\User\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0\selenium-http-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0\selenium-safari-driver-4.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0\selenium-support-4.0.0.jar;C:\Users\User\.m2\repository\org\apache\directory\studio\org.apache.commons.io\2.4\org.apache.commons.io-2.4.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire15856244193193992360\surefirebooter14812041969224821517.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire11735944513624994060\surefirebooter15224200196153965288.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.12+8-LTS-237"/>
@@ -60,83 +60,23 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testMovieSite" classname="com.leecottrell.selenium1.AppTest" time="23.257">
+  <testcase name="testMovieSite" classname="com.leecottrell.selenium1.AppTest" time="23.364">
     <system-out><![CDATA[Reviews scraped 60
-Marvel mentioned 1 times
-1 "Eternals" isn't a terrible Marvel movie, just an average one. Considering the talent at work, and the potential of such a world-changing set of heroes, it could have been so much more.
-2 It's baffling how low-energy Eternals is. It looks like a film made by people who work in an office.
-3 Eternals is a slow-paced affair that runs too long and never quite delivers heart-stopping moments.
-4 Eternals makes for an alienating first watch. ... Dig a little deeper, however, and this behemoth of a superhero flick has its rewards too.
-5 ... everything fans expect from Marvel Studios while still feeling a bit hollow... fuel for the imagination... angsty and lovelorn but adds few revelations to the who-wants-to-live-forever trope...
-6 This movie needed better marketing as it was an epic drama with superheroes in it. The comic relief was very much needed because this was a pretty slow movie.
-7 There a solid performances, beautiful cinematography and decent story that was better than I expected. However this film felt and was incredibly long...
-8 It comes with all the childish nonsense over superheroes you get from juvenile comic books.
-9 Academy Award Winner Chloe Zhao's "Eternals" is not good, but unlike the slew of increasingly tiring and formulaic Marvel fare there are some bright spots.
-10 Without a strong human-level side to balance it all out, big concepts are just lifeless words and images.
-11 Tedious. [Full review in Spanish]
-12 Eternals is just as ambitious and argumentatively dispersed as the original comic series. [Full review in Spanish]
-13 Good without being great, Eternals is an enjoyable but bloated push into Marvel's cosmic comics catalogue.
-14 An epic that feels far smaller than it should.
-15 Chloe Zhao has made a flawed film, it's true, though it's bursting with beauty and ambition. It's possible this might be the best-looking film in the MCU, and Zhao gifts us with strong cinematography and numerous shots of gorgeous vistas.
-16 A more than two and a half hour pompous and leaden film. [Full review in Spanish]
-17 Zhao brings her flair for the beauty of the eye shots over vast landscapes...and it still delivers on the celestial plains of epic proportions. It's a cosmic opening for the next phase of the Marvel saga.
-18 It's a frustrating, occasionally fun, at points brilliant, frequently tiresome journey that never manages to reach any of the potential it so clearly had.
-19 This one captured my eye as well as my intrigue for this continuing storyline in ways I had not anticipated
-20 Introducing a dozen characters and establishing their backstories in an already busy plot is a heavy lift. Director Chloé Zhao (Nomadland) skillfully juggles all these elements, making an understandable 2.5 hour movie that covers all the bases.
-21 What might have been a fascinating interplay of psychologies and ideas, is rendered in broad, lifeless strokes.
-22 Eternals is somehow Marvel's most ambitious movie and also its worst.
-23 Eternals is dull, it's boring, and it's quite epically uninvolving.
-24 Taking up space in such a well-mined universe can't be easy, but Eternals not only manages to hold its own, but delivers something engaging, unique, funny and warm.
-25 The one exception to the film's utterly bloodless chemistry is a cameo by a post-credits pop star who, for all of 15 seconds, has a completely charming interaction with a CG creature. I believed that performance more than anything in the 2.5 hours.
-26 Bring in the portentous overreach of the Eternals' cosmos-shaking storyline, though, and her talent is diminished. For Zhao, bigger is not better.
-27 At its best, this is galaxy-brain, comic-book stuff rooted in a tactile sense of place.
-28 Eternals has a lot of heart and beauty that drips off the screen when you watch it.
-29 For a movie with ten protagonists, it's impressive that each character is given a unique personality.
-30 Clearly, we're supposed to leave the cinema filled with an urgent sense of anticipation. But all I felt was relief that the two-and-a-half hour running time had finally come to an end.
-31 Chloe Zhao maintains a terrific spark in the character interaction, and the plot has some thrilling twists and turns.
-32 Chloé Zhao's take on the Marvel Universe is a far cry from her last film, Nomadland. While Eternals has its moments, it is not one of the Marvel greats.
-33 The enthralling action set-pieces have to be parsed from in-between awkward moments in which characters stand around waiting to explain themselves. The wildly inconsistent tone moves from laugh-out-loud to deadly earnest...
-34 Eternals represents the kind of grand, open-hearted home run swings that Hollywood should be more willing to embrace.
-35 Those who have followed Zhao's meditative, self-reflective work will know that her language of communication is a blend of deep silences and aching words.
-36 Despite being 2 hours 37 minutes long, Eternals feels rushed, like it's trying to squeeze a ten-episode series into one feature film.
-37 Zhao's approach can feel like a director at war with the very nature of the material she has been hired to direct.... Eternals can still be admired for its chutzpah.
-38 An ambitious mess and a fascinating failure
-39 It mixes melancholy with violence and humour, styles clashing, the artsy vs. the "Marvel way," with cartoonish digital creations and all. [Full review in Spanish]
-40 The Marvel shill on this podcast approves and it's sure pretty enough to admire even being a big leap.
-41 Eternals isn't a complete success, with issues large and small. That said...it's an impressive effort. This is a BIG swing, and while it might not be a home run, we're looking at some solid contact. For an undertaking like this, that's a win.
-42 A slack film, in the way one gets to be when one has no pressing need to come in at a reasonable running time.
-43 The long and short of it is that, yes, Eternals is a colossal bore...for those lacking patience, heart, and imagination.
-44 On the whole, the film succeeds in becoming the series' most emotional outing.
-45 Eternals creates the illusion of a maturity that would have elevated it to director Chloé Zhao's standards. [Full review in Spanish]
-46 None of the characters come across and compelling...yes, these being are supposed to be immortal, but you'll feel as if you're time with the Eternals has lasted for an eternity.
-47 Chloé Zhao deals with real world themes that resonate now and will only resonate more as the MCU continues to evolve.
-48 Eternals is not a good movie. It's not a good comic book movie, it's not a good action movie, it's not a good Marvel movie. It somehow feels overstuffed and empty at the same time. It's muddled and convoluted. It's a bland and boring and bewildering mess.
-49 Eternals is a mess, a beautiful mess, but a mess nonetheless. There is a far more interesting movie under all that flotsam. In better hands, the movie could have been something special. All Zhao has provided is a bland, dull film.
-50 I came out disappointed having witnessed an imbalanced, slightly messy, uninspiring, and sadly boring slog.
-51 For all its flaws, it is far from the worst entry in the MCU, but it is, perhaps, the first of Marvel's films to be less than the sum of its parts.
-52 In many ways, what it means to be human is the central question that drives Eternals... But the movie's dizzying star power and twisty backstories render it too clunky and overstuffed to concisely answer said central question.
-53 I really enjoyed Eternals despite it being too long, and one of the reasons was the humor. Another was just that it felt kind of quirky and different from most Marvel movies these days.
-54 An exciting peek into the future of the franchise....with grander ideas and new types of storytelling.
-55 Marvel is the peanut butter of movies, Zhao is the filet mignon of directors, and I just wasn't fully enjoying my peanut butter steak.
-56 It's not that none of the movie works. It's that none of it works for very long.
-57 The MCU's first DCEU film.
-58 Gorgeous and vacant, The Eternals is the most numbing entry in Marvel's 13-year-old MCU franchise -- even as it struggles to be its weirdest and most philosophical.
-59 Exciting, yet exhausting introduction to a new set of Marvel superheroes with an emphasis on eclectic diversity and familial inclusion.
-60 Eternals is not perfect for the stumbling beginning and Jolie plays a character that doesn't seem fully fleshed out on screen. She doesn't quite fit in. But overall, it's one of the best MCU experiences for it's eccentric and endearing characters.
-worst Second Count 1
+Zhao mentioned 13 times
+Zhao Count 13
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 60485
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 52927
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 22, 2021 4:29:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 23, 2021 10:45:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Nov 22, 2021 4:29:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Nov 23, 2021 10:45:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 96, so returning the closest version found: 95
-Nov 22, 2021 4:29:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Nov 23, 2021 10:45:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 96 of 95
 ]]></system-err>
   </testcase>

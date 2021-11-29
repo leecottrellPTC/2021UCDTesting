@@ -72,12 +72,13 @@ public class AppTest {
         try {
             
             Thread.sleep(5000);
-
-           // Boolean wait = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedCondition.visibilityOfElementLocated(By.className("the_review") ))
+            
+            //WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(10));
+            //wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.className("the_review") ));
             List<WebElement> allReviews = driver.findElements(By.className("the_review"));
             for (WebElement aReview : allReviews) {
                 reviewsText.add(aReview.getText());
-                if (aReview.getText().contains("podcast")) {
+                if (aReview.getText().contains("Zhao")) {
                     marvelCount++;
                 }
             }
@@ -95,7 +96,7 @@ public class AppTest {
         // driver.findElements(By.className("the_review"));
         // List<String> reviewsText = new ArrayList<String>();
         JavascriptExecutor js = (JavascriptExecutor) driver;
-
+        
         for (int x = 0; x < 3; x++) {
             stripSite();
             try {
@@ -110,16 +111,16 @@ public class AppTest {
         int c = 1;
 
         System.out.println("Reviews scraped " + reviewsText.size());
-        System.out.println("Marvel mentioned " + marvelCount + " times");
+        System.out.println("Zhao mentioned " + marvelCount + " times");
         int anotherMarvelCount = 0;
         for(String s : reviewsText){
-            System.out.println(c + " " + s);
+           // System.out.println(c + " " + s);
             c++;
-            if(s.contains("Jolie")){
+            if(s.contains("Zhao")){
                 anotherMarvelCount++;
             }
         }
-        System.out.println("worst Second Count " + anotherMarvelCount);
+        System.out.println("Zhao Count " + anotherMarvelCount);
 
     }
 
