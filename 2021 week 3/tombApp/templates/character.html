@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title_text %}Character Page{% endblock %}
+{% block header_text %}Enter your character stats!{% endblock %}
+{% block body_content %}
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="charname">What is your name?</label>
+        <input type="text" class="form-control" id="charname" name="charname"
+        maxlength="40" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="hitpoints">How many hitpoints?</label>
+        <input type="number" class="form-control" id="hitpoints" name="hitpoints"
+        min="1" max="200" required>
+    </div>
+
+    <div class="form-group">
+        <label for="armor">How much armor?</label>
+        <input type="number" class="form-control" id="armor" name="armor"
+        min="10" max="20" required>
+    </div>
+    <input type="submit" value="Create your character" id="submit" name="submit">
+</form>
+{% endblock %}
