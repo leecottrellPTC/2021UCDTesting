@@ -46,8 +46,6 @@ public class Card {
             default:
                 suit = "Bad Suit";
         }
-
-
     }
     
     public String showCard(){

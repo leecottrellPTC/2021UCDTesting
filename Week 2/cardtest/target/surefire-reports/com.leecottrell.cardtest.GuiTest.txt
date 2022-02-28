@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.leecottrell.cardtest.GuiTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.616 s <<< FAILURE! - in com.leecottrell.cardtest.GuiTest
+frameLoads(com.leecottrell.cardtest.GuiTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.leecottrell.cardtest.GuiTest.frameLoads(GuiTest.java:17)
+

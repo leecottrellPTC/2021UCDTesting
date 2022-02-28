@@ -17,28 +17,28 @@ public class CardTest
         assertTrue( "Should be true but was false ", true );
     }
 
-    @Before
+    @Before     //@BeforeEach
     public  void runBeforeEachTest(){
         System.out.println("I am running before each test");
         //setup the environment for each test
     }
 
-    @BeforeClass
+    @BeforeClass    //@BeforeAll
     public static void runBeforeEntireTest(){
         System.out.println("I will run once before all tests");
         //setup environoment for entire test
     }
 
-    @After
+    @After          //@AfterEach
     public void runAfterEachTest(){
         System.out.println("I am running AFTER each test");
         //cleanup the environment for each test
     }
 
-    @AfterClass
+    @AfterClass     //@AfterAll
     public static void runAfterEntireTest(){
         System.out.println("I will run once before all tests");
-        //setup environoment for entire test
+        //cleanup environoment for entire test
     }
 
     @Test
@@ -51,7 +51,7 @@ public class CardTest
         c2.setSuit("Spades");
 
         c1.setValue(5);
-        c2.setValue(6);
+        c2.setValue(5);
 
         //run the function
         boolean expected = true;
@@ -62,7 +62,7 @@ public class CardTest
        assertEquals(expected, actual);
     }
 
-    @Test
+    @Ignore
     public void properDeckIsGenerated(){
         //setup
         Card c = new Card();
@@ -73,6 +73,15 @@ public class CardTest
             c.pickCard();
             cardCounts[c.getValue() -1] ++;
         }
+        //check the results
         assertArrayEquals(correctCardCount, cardCounts);
     }
+
+    @ParameterizedTest
+    @ValueSource(ints = {13, 12, 11} )
+    public void testShowCard(){
+        
+    }
 }
+//Will G 
+//If you can reasonably expect it to fail, you should test it
